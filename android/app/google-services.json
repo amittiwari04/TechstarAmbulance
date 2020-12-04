@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "511223904093",
+    "firebase_url": "https://ambulancetracker-bea10.firebaseio.com",
+    "project_id": "ambulancetracker-bea10",
+    "storage_bucket": "ambulancetracker-bea10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511223904093:android:aedbd64794061a5b4b5ab4",
+        "android_client_info": {
+          "package_name": "com.example.customer_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511223904093-hmjsi4upftrfuutluchfrtb7vdlt8nu4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.customer_app",
+            "certificate_hash": "a08fe52cc066782ab9ca20a752c3c1326318722e"
+          }
+        },
+        {
+          "client_id": "511223904093-q2b3ldh6ehogbek80r8v58kla57g0kgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpyWl2A7xuQH3AbAS09igu_QR4c8je7aU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511223904093-q2b3ldh6ehogbek80r8v58kla57g0kgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511223904093:android:bd0ff0b7a85d02014b5ab4",
+        "android_client_info": {
+          "package_name": "com.example.hospital_ambulance_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511223904093-q2b3ldh6ehogbek80r8v58kla57g0kgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpyWl2A7xuQH3AbAS09igu_QR4c8je7aU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511223904093-q2b3ldh6ehogbek80r8v58kla57g0kgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
