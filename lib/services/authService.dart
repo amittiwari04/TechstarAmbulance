@@ -10,19 +10,22 @@ class AuthService {
     return StreamBuilder(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
-            if (snapshot.hasData) {
-              return HomePage();
-            } else {
-              return LoginScreen();
-            }
+          if (snapshot.hasData) {
+            return HomePage();
+          } else {
+            return LoginScreen();
+          }
         });
   }
 
-  Future<void> signinWithEmail(String email, String password) {
+  Future<void> signinWithEmail(
+      String email, String password, BuildContext context) {
     return FirebaseAuth.instance
         .signInWithEmailAndPassword(email: email, password: password)
-        .then((value) {})
-        .catchError((e) {
+        .then((value) {
+      Navigator.of(context)
+          .pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
+    }).catchError((e) {
       Fluttertoast.showToast(msg: 'Something went wrong');
     });
   }

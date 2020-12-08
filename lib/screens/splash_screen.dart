@@ -1,12 +1,9 @@
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:hospital_ambulance_app/screens/home_page.dart';
 import 'package:hospital_ambulance_app/screens/loginScreen.dart';
-
-
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -21,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<void> getcurrentUser() async {
     final user = FirebaseAuth.instance.currentUser;
-    if (user == null) {  
+    if (user == null) {
       Future.delayed(Duration(seconds: 3)).then((value) {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
@@ -62,9 +59,23 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Text(
                 'I   C   E',
                 style: GoogleFonts.poppins(
-                    color: HexColor("FA163F"), fontSize: 23,fontWeight: FontWeight.bold),
+                    color: HexColor("FA163F"),
+                    fontSize: 23,
+                    fontWeight: FontWeight.bold),
               ),
-            )
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .15,
+            ),
+            Center(
+              child: Text(
+                'In Case of Emergency',
+                style: GoogleFonts.poppins(
+                    color: HexColor("FA163F"),
+                    fontSize: 23,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
         ),
       ),
